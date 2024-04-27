@@ -1,7 +1,7 @@
 {"name":"WebTech","version":"0.0.1","private":"true",
 "scripts": {
     "dev":"nodemon app.js",
-    "start": "node js"
+    "start": "node app.js"
   },
 "dependencies":
 {"cookie-parser":"^1.4.6",
