@@ -1,0 +1,51 @@
+doctype html
+html
+  head
+    title Form Data
+    style.
+      h1 {
+
+        text-align: center;
+        margin-top: 10px;
+      }
+      h2{
+        padding-left:300px;
+      }
+      .box{
+        width: 80%;
+        margin: 10px;
+        border: 1px solid black ;
+        padding: 20px;
+    
+        display:flex;flex-direction:column;justify-content:center;
+      }
+      .name label{
+        font-weight:bold;
+        padding:10px;
+        padding-left:300px;
+      }
+      .email label {
+        font-weight:bold;
+        padding:10px;
+        padding-left:300px;
+      }
+      .form-data label {
+        display: inline-block;
+        width: 100px;
+        font-weight: bold;
+        margin-right: 10px;
+      }
+      .form-data span {
+        font-weight: normal;
+      }
+  body(style="display:flex;flex-direction:column;justify-content:center;align-items:center")
+    h1 Form Data
+    .box
+      h2 Your Name and Email:
+      .name
+        label Name:
+        span= name
+      .email
+        label Email:
+        span= email
+
