@@ -2,11 +2,13 @@ var express = require("express");
 var path = require("path");
 var cookieParser = require("cookie-parser");
 const stylus = require("stylus");
+var logger = require("morgan");
 const nib = require("nib");
 var app = express();
 const PORT = 3000;
 app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "jade");
+app.use(logger("dev"));
 app.use(
     stylus.middleware({
         src: __dirname + "/public",
